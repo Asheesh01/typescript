@@ -25,23 +25,37 @@
 // delayed(log)
 
 
-type manger={
-    name:string;
+// type manger={
+//     name:string;
+//     age:string;
+// }
+// type User={
+//     name:string;
+//     book:string;
+//     chapter:string
+// }
+
+// type intersection= manger & User
+
+// let t:intersection={
+//     name:"asheesgerg4h",
+//     book:"math",
+//     chapter:"5",
+//     age:"21"
+// }
+
+// console.log(t); 
+
+interface User{
+    id:string;
     age:string;
-}
-type User={
     name:string;
-    book:string;
-    chapter:string
+    email:string;
+    password:string;
 }
 
-type intersection= manger & User
+type updatesProps= Pick<User,'name' | 'age' |'email'>
 
-let t:intersection={
-    name:"asheesgerg4h",
-    book:"math",
-    chapter:"5",
-    age:"21"
+function UpdateProps(updateProps:updatesProps){
+    
 }
-
-console.log(t); 
