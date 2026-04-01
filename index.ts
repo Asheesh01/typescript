@@ -56,6 +56,8 @@ interface User{
 
 type updatesProps= Pick<User,'name' | 'age' |'email'>
 
+type updatePropsOptional=Partial<updatesProps>
+
 function UpdateProps(updateProps:updatesProps){
-    
+
 }
